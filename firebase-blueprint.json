@@ -1,0 +1,170 @@
+{
+  "entities": {
+    "manager_credentials": {
+      "fields": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "employeeId": { "type": "string" },
+        "password": { "type": "string" },
+        "role": { "type": "string" },
+        "department": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "trainer_credentials": {
+      "fields": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "employeeId": { "type": "string" },
+        "password": { "type": "string" },
+        "role": { "type": "string" },
+        "department": { "type": "string" },
+        "managerId": { "type": "string" },
+        "managerName": { "type": "string" },
+        "managerEmail": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "user_credentials": {
+      "fields": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "employeeId": { "type": "string" },
+        "password": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "system_config": {
+      "fields": {
+        "managerSecurityPasscode": { "type": "string" }
+      }
+    },
+    "users": {
+      "fields": {
+        "uid": { "type": "string" },
+        "employeeId": { "type": "string" },
+        "fullName": { "type": "string" },
+        "companyEmail": { "type": "string" },
+        "role": { "type": "string" },
+        "teamId": { "type": "string" },
+        "managerId": { "type": "string" },
+        "designation": { "type": "string" },
+        "location": { "type": "string" },
+        "subject": { "type": "string" },
+        "isActive": { "type": "boolean" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    },
+    "teams": {
+      "fields": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "managerId": { "type": "string" },
+        "department": { "type": "string" }
+      }
+    },
+    "dailyUpdates": {
+      "fields": {
+        "userId": { "type": "string" },
+        "employeeId": { "type": "string" },
+        "date": { "type": "string" },
+        "classesHandled": { "type": "string" },
+        "tasksWorkedOn": { "type": "string" },
+        "projectUpdates": { "type": "string" }
+      }
+    },
+    "classes": {
+      "fields": {
+        "userId": { "type": "string" },
+        "className": { "type": "string" },
+        "batch": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "tasks": {
+      "fields": {
+        "taskName": { "type": "string" },
+        "assignedTo": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "projects": {
+      "fields": {
+        "projectName": { "type": "string" },
+        "assignedTo": { "type": "string" },
+        "overallCompletionPercentage": { "type": "number" }
+      }
+    },
+    "projectMilestones": {
+      "fields": {
+        "projectId": { "type": "string" },
+        "title": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "performanceRecords": {
+      "fields": {
+        "userId": { "type": "string" },
+        "overallScore": { "type": "number" },
+        "category": { "type": "string" }
+      }
+    },
+    "targets": {
+      "fields": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" }
+      }
+    },
+    "alerts": {
+      "fields": {
+        "userId": { "type": "string" },
+        "type": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "notifications": {
+      "fields": {
+        "userId": { "type": "string" },
+        "title": { "type": "string" }
+      }
+    },
+    "feedback": {
+      "fields": {
+        "userId": { "type": "string" },
+        "score": { "type": "number" }
+      }
+    },
+    "attendance": {
+      "fields": {
+        "userId": { "type": "string" },
+        "status": { "type": "string" }
+      }
+    },
+    "manager_change_requests": {
+      "fields": {
+        "instructorId": { "type": "string" },
+        "instructorName": { "type": "string" },
+        "instructorEmail": { "type": "string" },
+        "instructorEmployeeId": { "type": "string" },
+        "currentManagerId": { "type": "string" },
+        "currentManagerName": { "type": "string" },
+        "currentManagerEmail": { "type": "string" },
+        "requestedManagerId": { "type": "string" },
+        "requestedManagerName": { "type": "string" },
+        "requestedManagerEmail": { "type": "string" },
+        "reason": { "type": "string" },
+        "status": { "type": "string" },
+        "requestDate": { "type": "string" },
+        "reviewedDate": { "type": "string" },
+        "reviewNotes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      }
+    }
+  }
+}
